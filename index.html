@@ -1,0 +1,36 @@
+
+<div id="map"></div>
+<button id="bar" class="btn tarmac">Use the thumb controller to switch POIs ↔, zoom ↕ and navigate</button>
+<div id="simulator-overlay" class="overlay">
+  <h2>COBI DevKit Demo 🚲</h2>
+  <p>
+    To check out this example module, please
+  <ol>
+    <li>Install the <a href="https://chrome.google.com/webstore/detail/cobi-devkit-simulator/hpdhkapigojggienmiejhblkhenjdbno" target="_blank">DevKit Chrome Extension</a></li>
+    <li>Open up the Developer Tools (⌘ + Option + i / Ctrl + Shift + j)</li>
+    <li>Select the »COBI« tab in the Developer Tools (check the overflow menu)</li>
+  </ol>
+  </p>
+<p>
+  <b>It may take a few seconds to initialize 🚀</b>
+</p>
+</div>
+<div id="navigation-overlay" class="overlay" style="display: none">
+  <h2 id="navigation-destination"></h2>
+  <p>
+    Curious how to start a navigation? Just use the function
+    <a href="https://cobi-bike.github.io/COBI.js/#cobinavigationservicecontrolwrite" target="_blank">COBI.navigationService.control.write()</a> and run the demo in the COBI <b>App</b>.
+  </p>
+  <p>
+    To learn more, please check out the documentation on <a href="https://github.com/cobi-bike/DevKit" target="_blank">GitHub</a>. 
+    You can also just fork this pen and play around with it. 
+  </p>
+
+  <p>
+    Press <b>⊙</b> again to close this dialog.
+  </p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.cobi.bike/cobi.js/0.34.1/cobi.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJmloGS_QRE3aetND1q2CRH6Q_lJiwTyA&libraries=places,geometry"></script>
+<script src="https://cdn.cobi.bike/devkit/v1.0.0/js/cobi-style.min.js"></script>
